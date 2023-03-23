@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+/* set color variable */
+:root{
+  --background-color: #fff;
+  --text-color:#010101;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: var(--background-color);
+  color:var(--text-color);
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header{
+  height: 50px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  padding: 20px 0px;
+  background: rgb(118, 0, 77);
+  color: #fff;
+}
+.Header h1{
+  font-size: 20px;
+}
+
+.Home{
+  height: 76.4vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+}
+.User{
+  height: 76.4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Register{
+  height: 76.4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Footer{
+  padding: 20px 0px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(65, 1, 43);
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+/* all btn design */
+.btn_design{
+  background:  var(--text-color) !important;
+  color: var(--background-color) !important;
+  padding: 10px 50px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn_design:hover{
+  border: 1px solid #000 !important;
+  background:  var(--text-color) !important;
+  color: var(--background-color) !important;
+}
+
+
+/* home_btn_group design */
+.home_btn_group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+
+
+/* Responsive */
+/* mobile device responsive */
+@media  screen and (min-width:320px) and (max-width:480px) {
+  .home_btn_group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .btn_design{
+    background:  var(--text-color) !important;
+    color: var(--background-color) !important;
+    padding: 8px 20px !important;
+  }
+  body{
+    background: var(--background-color);
+    color:var(--text-color);
+    font-size: 12px;
+  }
+  .Header h1{
+    font-size: 14px;
+  }
+}
+/* ipads and tablet responsive design */
+@media  screen and (min-width:481px) and (max-width:768px) {
+  .home_btn_group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .btn_design{
+    background:  var(--text-color) !important;
+    color: var(--background-color) !important;
+    padding: 8px 20px !important;
+  }
+  body{
+    background: var(--background-color);
+    color:var(--text-color);
+    font-size: 16px;
+  }
+  .Header h1{
+    font-size: 12px;
+  }
+  
+}
+/* laptop responsive  */
+@media  screen and (min-width:769px) and (max-width:1024px) {
+  .home_btn_group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .btn_design{
+    background:  var(--text-color) !important;
+    color: var(--background-color) !important;
+    padding: 8px 20px !important;
+  }
+  body{
+    background: var(--background-color);
+    color:var(--text-color);
+    font-size: 16px;
+  }
+}
+/* Desktop responsive */
+@media  screen and (min-width:1025px) and (max-width:1200px) {
+  .home_btn_group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .btn_design{
+    background:  var(--text-color) !important;
+    color: var(--background-color) !important;
+    padding: 8px 20px !important;
+  }
+  body{
+    background: var(--background-color);
+    color:var(--text-color);
+    font-size: 16px;
+  }
+}
+/* tv responsive */
+@media  screen and (min-width:1201) and (max-width:2000px) {
+  .home_btn_group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .btn_design{
+    background:  var(--text-color) !important;
+    color: var(--background-color) !important;
+    padding: 8px 20px !important;
+  }
+  body{
+    background: var(--background-color);
+    color:var(--text-color);
+    font-size: 16px;
   }
 }
